@@ -33,8 +33,8 @@
 ### 1. Клонирование и настройка
 
 ```powershell
-git clone https://github.com/your-username/dj07-django-telegram-api.git
-cd dj07-django-telegram-api
+git clone https://github.com/ergon73/django-rest-telegram-bot-integration.git
+cd django-rest-telegram-bot-integration
 .\scripts\setup.ps1
 ```
 
@@ -151,7 +151,7 @@ curl http://127.0.0.1:8010/api/user/123/
 ## Структура проекта
 
 ```text
-dj07-django-telegram-api/
+django-rest-telegram-bot-integration/
 ├── djangobot/           # Django project settings
 │   ├── settings.py      # DRF, CORS configuration
 │   └── urls.py          # Root URL routing
@@ -179,7 +179,13 @@ dj07-django-telegram-api/
 python manage.py test
 ```
 
-## Архитектура
+**Дополнительные возможности:**
+
+**Browsable API:**
+- `http://127.0.0.1:8010/api/` - корневой эндпоинт с документацией
+- `http://127.0.0.1:8010/admin/` - админ-панель для управления пользователями
+
+**Архитектура**
 
 ```text
 ┌─────────────────┐     HTTP POST/GET     ┌─────────────────┐
