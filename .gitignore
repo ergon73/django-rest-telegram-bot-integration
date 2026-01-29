@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+*.log
+.idea/
+.vscode/
+human-readme.md
+genai-readme.md
+.cursorrules
